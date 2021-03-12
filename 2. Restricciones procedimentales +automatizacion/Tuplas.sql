@@ -1,0 +1,3 @@
+/*TUPLAS*/
+/*TUPLA TORNEO*/
+ALTER TABLE TORNEO ADD CONSTRAINT CHK_FechasTorneo CHECK (fechaInicial<fechaFinal);

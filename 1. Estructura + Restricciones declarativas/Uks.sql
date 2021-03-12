@@ -1,0 +1,23 @@
+/*UKS TORNEO*/
+ALTER TABLE Torneo ADD CONSTRAINT UK_Torneo UNIQUE (nombreTorneo);
+
+/*UKS ESTADIO*/
+ALTER TABLE Estadio ADD CONSTRAINT UK_Estadio UNIQUE (nombreEstadio);
+
+/*UKS CLUB*/
+ALTER TABLE Club ADD CONSTRAINT UK_Club UNIQUE (nombreClub);
+
+/*UKS ADMINISTRATIVO*/
+ALTER TABLE Administrativo ADD CONSTRAINT UK_Administrativo UNIQUE (nombreAdmin);
+
+/*UKS JUGADOR*/
+ALTER TABLE Jugador ADD CONSTRAINT UK_Jugador UNIQUE (nombreJugador);
+
+/*UKS DIRECTOR*/
+ALTER TABLE Director ADD CONSTRAINT UK_Director UNIQUE (nombreDirector);
+
+/*UKS LUGAR*/
+ALTER TABLE Lugar ADD CONSTRAINT UK_Lugar UNIQUE (paisLugar);
+
+/*UKS ARBITRO*/
+ALTER TABLE Arbitro ADD CONSTRAINT UK_Arbitro UNIQUE (nombreArb);

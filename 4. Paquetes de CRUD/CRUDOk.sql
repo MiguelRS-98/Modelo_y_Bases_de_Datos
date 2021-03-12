@@ -1,0 +1,25 @@
+--CRUDok
+SELECT * FROM registros;
+INSERT INTO horarios(hora) VALUES ('7:00-8:30');
+EXECUTE PC_estudiantes.Ad_estudiantes ('Pepito Perez','T.I',1014526879,'PepitoPerez@hotmail.com');
+EXECUTE PC_estudiantes.Ad_estudiantes ('Emanuel Turizo','T.I',1010123456,'EmaChorizo@hotmail.com');
+EXECUTE PC_estudiantes.Mod_estudiantes (2,'C.C',1014654987);
+EXECUTE PC_profesores.Ad_profesores ('Wilmer Garzon','Ingeniero Civil','C.C',1016357900,'WilmerGarzon213@gmail.com','W1l8E4G2RSS');
+EXECUTE PC_profesores.Mod_profesores (1,'Ingeniero de Sistemas','WilmerSYSTEM123');
+EXECUTE PC_profesores.Ad_reconocimientos ('Maestro de Maestros','Canada',To_date('6/14/2018', 'mm-dd-yyyy'));
+EXECUTE PC_decanaturas.Ad_decanaturas ('Ingenieria de Sistemas','Maria Irma Diaz');
+EXECUTE PC_decanaturas.Mod_decanaturas (1,'Oswaldo Castillo Navetty');
+EXECUTE PC_decanaturas.Ad_decaxestu (1,1);
+EXECUTE PC_cursos.Ad_cursos ('Programacion Orientada a Objetos','POOB');
+EXECUTE PC_estudiantes.ad_registros(1,1);
+EXECUTE PC_cursos.AD_cursosxprof(1,1);
+EXECUTE PC_recomendaciones.Ad_recomendaciones (1,1,3,'');
+EXECUTE PC_recomendaciones.Mod_recomendaciones (1,1,'Es alguien muy dedicado y aplicado');
+EXECUTE PC_cursos.Ad_salones ('B',35);
+EXECUTE PC_cursos.Mod_salones (2,25);
+EXECUTE PC_cursos.Ad_horariosxcursos (0,1,1);
+EXECUTE PC_cursos.El_cursos (1);
+EXECUTE PC_cursos.El_salones (2);
+EXECUTE PC_profesores.El_profesores (1);
+EXECUTE PC_profesores.El_reconocimientos (1);
+EXECUTE PC_decanaturas.El_decaxestu (1,1);
